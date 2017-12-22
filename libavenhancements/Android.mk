@@ -3,8 +3,8 @@ LOCAL_PATH := $(call my-dir)
 PATH_32 := $(TARGET_OUT_VENDOR)/lib/
 PATH_64 := $(TARGET_OUT_VENDOR)/lib64/
 
-ifeq (,$(wildcard vendor/amlogic/frameworks/av/AmFFmpegAdapter))
-ifeq (,$(wildcard vendor/amlogic/AmFFmpegAdapter))
+ifeq (,$(wildcard $(LOCAL_PATH)/../../../frameworks/av/AmFFmpegAdapter))
+ifeq (,$(wildcard $(LOCAL_PATH)/../../../AmFFmpegAdapter))
 include $(CLEAR_VARS)
 
 LOCAL_MODULE := libamffmpegadapter
@@ -36,8 +36,8 @@ include $(BUILD_PREBUILT)
 endif
 endif
 
-ifeq (,$(wildcard vendor/amlogic/frameworks/av/amnuplayer))
-ifeq (,$(wildcard vendor/amlogic/amnuplayer))
+ifeq (,$(wildcard $(LOCAL_PATH)/../../../frameworks/av/amnuplayer))
+ifeq (,$(wildcard $(LOCAL_PATH)/../../../amnuplayer))
 include $(CLEAR_VARS)
 
 LOCAL_MODULE := libamnuplayer
