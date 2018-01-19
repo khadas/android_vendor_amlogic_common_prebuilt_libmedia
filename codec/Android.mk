@@ -1,5 +1,5 @@
-ifeq (,$(wildcard $(LOCAL_PATH)/../../../frameworks/av/AmFFmpegAdapter))
 ifeq (,$(wildcard $(LOCAL_PATH)/../../../AmFFmpegAdapter))
+ifeq (,$(wildcard $(BOARD_AML_VENDOR_PATH)/AmFFmpegAdapter))
 LOCAL_PATH := $(call my-dir)
 
 PATH_32 := $(TARGET_OUT_VENDOR)/lib/
